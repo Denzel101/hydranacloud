@@ -35,7 +35,7 @@ public class DrinkList extends AppCompatActivity {
         //Firebase
 
         database = FirebaseDatabase.getInstance();
-        drinkList = database.getReference("Drink");
+        drinkList = database.getReference("Drinks");
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_drink);
         recyclerView.setHasFixedSize(true);
@@ -49,14 +49,14 @@ public class DrinkList extends AppCompatActivity {
         if (!CategoryId.isEmpty() && CategoryId != null){
 
 
-            LoadListFoods (CategoryId);
+            LoadListDrinks (CategoryId);
 
         }
 
 
     }
 
-    private void LoadListFoods (String categoryId) {
+    private void LoadListDrinks (String categoryId) {
 
         adapter = new FirebaseRecyclerAdapter<Drink, DrinkViewHolder>(Drink.class,R.layout.drink_item,DrinkViewHolder.class,drinkList.orderByChild("MenuId").equalTo(categoryId)) {
             @Override
@@ -80,7 +80,6 @@ public class DrinkList extends AppCompatActivity {
         };
 
         //set adapter
-        Log.d("TAG",""+ adapter.getItemCount());
         recyclerView.setAdapter(adapter);
 
     }
