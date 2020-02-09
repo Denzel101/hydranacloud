@@ -10,8 +10,8 @@ import com.example.hydrana.R;
 
 public class DrinkViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public TextView food_name;
-    public ImageView food_image;
+    public TextView drink_name;
+    public ImageView drink_image;
 
     private ItemClickListener itemClickListener;
 
@@ -25,8 +25,8 @@ public class DrinkViewHolder extends RecyclerView.ViewHolder implements View.OnC
 
         super(itemView);
 
-        food_name = (TextView)itemView.findViewById(R.id.food_name);
-        food_image = (ImageView)itemView.findViewById(R.id.food_image);
+        drink_name = (TextView)itemView.findViewById(R.id.drink_name);
+        drink_image = (ImageView)itemView.findViewById(R.id.drink_image);
 
         itemView.setOnClickListener(this);
 

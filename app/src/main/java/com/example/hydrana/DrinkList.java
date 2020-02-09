@@ -49,22 +49,22 @@ public class DrinkList extends AppCompatActivity {
         if (!CategoryId.isEmpty() && CategoryId != null){
 
 
-            LoadListFood (CategoryId);
+            LoadListFoods (CategoryId);
 
         }
 
 
     }
 
-    private void LoadListFood (String categoryId) {
+    private void LoadListFoods (String categoryId) {
 
         adapter = new FirebaseRecyclerAdapter<Drink, DrinkViewHolder>(Drink.class,R.layout.drink_item,DrinkViewHolder.class,drinkList.orderByChild("MenuId").equalTo(categoryId)) {
             @Override
             protected void populateViewHolder(DrinkViewHolder viewHolder, Drink model, int position) {
 
-                viewHolder.food_name.setText(model.getName());
+                viewHolder.drink_name.setText(model.getName());
                 Picasso.with(getBaseContext()).load(model.getImage())
-                        .into(viewHolder.food_image);
+                        .into(viewHolder.drink_image);
 
                 final Drink local = model;
                 viewHolder.setItemClickListener(new ItemClickListener() {

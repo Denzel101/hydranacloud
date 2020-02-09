@@ -103,9 +103,9 @@ public class home extends AppCompatActivity
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
 
-                       //Get Category and send to new activity
+                       //Get CategoryID and send to new activity
                         Intent drinkList = new Intent(home.this,DrinkList.class);
-                        //CategoryID key off item
+                        //CategoryID key of item
                         drinkList.putExtra("CategoryId",adapter.getRef(position).getKey());
                         startActivity(drinkList);
                         ////lb
