@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "232201169862",
+    "firebase_url": "https://hydrana-ede73.firebaseio.com",
+    "project_id": "hydrana-ede73",
+    "storage_bucket": "hydrana-ede73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232201169862:android:48faa9f55b756f4f",
+        "android_client_info": {
+          "package_name": "com.example.hydrana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232201169862-gakhfcc4se9aujqpb9psk35aioah4a57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hydrana",
+            "certificate_hash": "6e575d9dc3f4f916b3c6a4ccfc6040291cfcfdc3"
+          }
+        },
+        {
+          "client_id": "232201169862-fg7e4655kagv6t7ot1gl6ckmua4f7fql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSb0y6mZz32R-0DmI-IY0ZoL7JJkxYUiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232201169862-fg7e4655kagv6t7ot1gl6ckmua4f7fql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
